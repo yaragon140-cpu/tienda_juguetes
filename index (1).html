@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Juguetes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Tienda de Juguetes</h1>
+
+    <!-- FORMULARIO -->
+    <section id="formulario">
+        <h2>Agregar Juguete</h2>
+        <input type="text" id="nombre" placeholder="Nombre del juguete">
+        
+        <select id="categoria">
+            <option value="Niñas">Niñas</option>
+            <option value="Niños">Niños</option>
+            <option value="Educativo">Educativo</option>
+        </select>
+
+        <input type="text" id="precio" placeholder="Precio">
+        
+        <button onclick="guardar()">Guardar</button>
+    </section>
+
+    <!-- BUSCADOR -->
+    <section id="busqueda">
+        <h3>Buscar juguete</h3>
+        <input type="text" id="input-buscar" placeholder="Escribe nombre...">
+        <button onclick="buscar()">Buscar</button>
+        <button onclick="cargarTodos()">Ver Todos</button>
+    </section>
+
+    <!-- CONTENEDOR -->
+    <div id="contenedor-juguetes"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
